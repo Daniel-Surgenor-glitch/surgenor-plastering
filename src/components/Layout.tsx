@@ -29,6 +29,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 Gallery
               </Link>
               <Link 
+                to="/plastering-course" 
+                className={`text-sm font-semibold transition-colors hover:text-blue-600 ${location.pathname === '/plastering-course' ? 'text-blue-600' : 'text-gray-900'}`}
+              >
+                Plastering Course
+              </Link>
+              <Link 
                 to="/about" 
                 className={`text-sm font-semibold transition-colors hover:text-blue-600 ${location.pathname === '/about' ? 'text-blue-600' : 'text-gray-900'}`}
               >

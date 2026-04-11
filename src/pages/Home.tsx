@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { Star, Quote } from 'lucide-react';
+import { Star, Quote, ArrowRight } from 'lucide-react';
 
 const reviews = [
   {
@@ -185,6 +185,29 @@ export default function Home() {
             ))}
           </motion.div>
         </div>
+      </section>
+
+      {/* Course CTA Section */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="bg-blue-50 p-12 md:p-20 rounded-[3rem] border border-blue-100 shadow-sm"
+        >
+          <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6">
+            Master the Art of Plastering
+          </h2>
+          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+            From complete beginner to confidently working on your own walls. Our structured course combines online learning with 3 days of hands-on training at your property.
+          </p>
+          <Link 
+            to="/plastering-course" 
+            className="bg-blue-600 text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-blue-700 hover:-translate-y-1 transition-all inline-flex items-center gap-3 shadow-xl"
+          >
+            Find out more about our plastering course <ArrowRight size={20} />
+          </Link>
+        </motion.div>
       </section>
 
       {/* Dark CTA Section - MOVED DOWN */}

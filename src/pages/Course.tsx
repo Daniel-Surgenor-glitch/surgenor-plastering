@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Lock, LogOut, Wrench, Package, Layers, Droplets, Paintbrush, AlertCircle, ShieldCheck, CheckCircle, Clock, Download, FileText, ClipboardCheck, BookOpen } from 'lucide-react';
+import { Lock, LogOut, Wrench, Package, Layers, Droplets, Paintbrush, AlertCircle, ShieldCheck, CheckCircle, Clock, Download, FileText, ClipboardCheck, BookOpen, ExternalLink, ShoppingCart } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 const PASS = "plaster1to6";
@@ -150,8 +150,8 @@ export default function Course() {
               <h4 className="text-xl font-bold text-gray-900 mb-2">Beginner Plastering Starter Kit</h4>
               <p className="text-gray-500 text-sm mb-6 flex-grow">Everything you need to know to get started with your first project.</p>
               <a 
-                href="site-pdf/starter-kit.pdf" 
-                download="starter-kit.pdf"
+                href="site-pdf/starter_kit.pdf" 
+                download="starter_kit.pdf"
                 className="w-full bg-blue-600 text-white py-3 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-blue-700 transition-all shadow-md"
               >
                 <Download size={18} /> Download PDF
@@ -164,8 +164,8 @@ export default function Course() {
               <h4 className="text-xl font-bold text-gray-900 mb-2">Prep Checklist</h4>
               <p className="text-gray-500 text-sm mb-6 flex-grow">A step-by-step guide to preparing your workspace for a perfect finish.</p>
               <a 
-                href="site-pdf/prep-checklist.pdf" 
-                download="prep-checklist.pdf"
+                href="site-pdf/prep_checklist.pdf" 
+                download="prep_checklist.pdf"
                 className="w-full bg-blue-600 text-white py-3 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-blue-700 transition-all shadow-md"
               >
                 <Download size={18} /> Download PDF
@@ -178,12 +178,141 @@ export default function Course() {
               <h4 className="text-xl font-bold text-gray-900 mb-2">Mixing Cheat Sheet</h4>
               <p className="text-gray-500 text-sm mb-6 flex-grow">Quick reference for perfect plaster consistency every time.</p>
               <a 
-                href="site-pdf/mixing-cheat-sheet.pdf" 
-                download="mixing-cheat-sheet.pdf"
+                href="site-pdf/mix_cheatsheet.pdf" 
+                download="mix_cheatsheet.pdf"
                 className="w-full bg-blue-600 text-white py-3 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-blue-700 transition-all shadow-md"
               >
                 <Download size={18} /> Download PDF
               </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Recommended Tools Section */}
+        <div className="mt-20">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-extrabold text-gray-900 mb-4">Recommended Tools & Equipment</h3>
+            <p className="text-gray-500 max-w-2xl mx-auto">
+              We've curated a list of the best tools for the trade. 
+              <span className="block mt-2 text-xs font-semibold text-blue-600 uppercase tracking-widest">
+                Disclosure: As an Amazon Associate, I earn from qualifying purchases. These are affiliate links.
+              </span>
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Category: Tools */}
+            <div className="bg-white p-8 rounded-3xl shadow-lg border border-gray-100">
+              <h4 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                <Wrench className="text-blue-600" size={24} /> Core Tools
+              </h4>
+              <ul className="space-y-4">
+                {[
+                  { name: "Marshal town 13 inch trowel", url: "https://amzn.to/4cDtRty" },
+                  { name: "REFINA SUPERFLEX-1 Plastering Trowel", url: "https://amzn.to/3Q2mrr3" },
+                  { name: "Water brush", url: "https://amzn.to/3Oyuyv2" },
+                  { name: "Bucket trowel", url: "https://amzn.to/4tGwS2a" },
+                  { name: "Hawk", url: "https://amzn.to/4cB7DIK" }
+                ].map((tool, i) => (
+                  <li key={i}>
+                    <a 
+                      href={tool.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-between p-3 rounded-xl hover:bg-blue-50 transition-colors group"
+                    >
+                      <span className="text-gray-700 font-medium">{tool.name}</span>
+                      <ExternalLink size={16} className="text-gray-300 group-hover:text-blue-600 transition-colors" />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Category: Mixing */}
+            <div className="bg-white p-8 rounded-3xl shadow-lg border border-gray-100">
+              <h4 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                <Droplets className="text-blue-600" size={24} /> Mixing Station
+              </h4>
+              <ul className="space-y-4">
+                {[
+                  { name: "Water bucket", url: "https://amzn.to/3Q3e9iL" },
+                  { name: "Cleaning bucket", url: "https://amzn.to/4sw7b3c" },
+                  { name: "Mixing bucket", url: "https://amzn.to/41WbB8G" },
+                  { name: "Cleaning brush", url: "https://amzn.to/4ciyfN8" },
+                  { name: "Mixing drill", url: "https://amzn.to/3OyvpMg" },
+                  { name: "My Mixing drill", url: "https://amzn.to/4tAu8Db" }
+                ].map((tool, i) => (
+                  <li key={i}>
+                    <a 
+                      href={tool.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-between p-3 rounded-xl hover:bg-blue-50 transition-colors group"
+                    >
+                      <span className="text-gray-700 font-medium">{tool.name}</span>
+                      <ExternalLink size={16} className="text-gray-300 group-hover:text-blue-600 transition-colors" />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Category: Prep */}
+            <div className="bg-white p-8 rounded-3xl shadow-lg border border-gray-100">
+              <h4 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                <Layers className="text-blue-600" size={24} /> Preparation
+              </h4>
+              <ul className="space-y-4">
+                {[
+                  { name: "PVA Scuttle and roller", url: "https://amzn.to/4t7gnw9" },
+                  { name: "Knife", url: "https://amzn.to/4ckIv7W" },
+                  { name: "Tape measure", url: "https://amzn.to/41ZyZSC" },
+                  { name: "Tin Snips", url: "https://amzn.to/4tLSwSJ" },
+                  { name: "Stapler", url: "https://amzn.to/3OkORfj" },
+                  { name: "Hammer", url: "https://amzn.to/4sxsem7" }
+                ].map((tool, i) => (
+                  <li key={i}>
+                    <a 
+                      href={tool.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-between p-3 rounded-xl hover:bg-blue-50 transition-colors group"
+                    >
+                      <span className="text-gray-700 font-medium">{tool.name}</span>
+                      <ExternalLink size={16} className="text-gray-300 group-hover:text-blue-600 transition-colors" />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Category: Other */}
+            <div className="bg-white p-8 rounded-3xl shadow-lg border border-gray-100">
+              <h4 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                <ShoppingCart className="text-blue-600" size={24} /> Other Essentials
+              </h4>
+              <ul className="space-y-4">
+                {[
+                  { name: "Speed skim", url: "https://amzn.to/4tEn88v" },
+                  { name: "Hopup", url: "https://amzn.to/4efJngu" },
+                  { name: "Impact Driver", url: "https://amzn.to/4vjPhn7" },
+                  { name: "Small tools", url: "https://amzn.to/4vpzZwT" },
+                  { name: "Scraper kit", url: "https://amzn.to/48EISJ8" }
+                ].map((tool, i) => (
+                  <li key={i}>
+                    <a 
+                      href={tool.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-between p-3 rounded-xl hover:bg-blue-50 transition-colors group"
+                    >
+                      <span className="text-gray-700 font-medium">{tool.name}</span>
+                      <ExternalLink size={16} className="text-gray-300 group-hover:text-blue-600 transition-colors" />
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
