@@ -1,9 +1,15 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { CheckCircle2 } from 'lucide-react';
 
 export default function About() {
   return (
     <div className="animate-in fade-in duration-700">
+      <Helmet>
+        <title>About Surgenor Plastering | Professional Plasterer Belfast</title>
+        <meta name="description" content="Learn more about Surgenor Plastering, Belfast's leading plastering contractor. We specialize in skimming, rendering, and structural wall solutions for residential and commercial projects." />
+        <link rel="canonical" href="https://surgenor-plastering.co.uk/about" />
+      </Helmet>
       <div className="bg-gray-50 py-20 px-4 text-center border-b border-gray-200">
         <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
           About <span className="text-blue-600">Surgenor Plastering</span>

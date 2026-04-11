@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
+import { Helmet } from 'react-helmet-async';
 import { Star, Quote, ArrowRight } from 'lucide-react';
 
 const reviews = [
@@ -38,6 +39,12 @@ const reviews = [
 export default function Home() {
   return (
     <div className="animate-in fade-in duration-700">
+      <Helmet>
+        <title>Surgenor Plastering | Expert Plasterer Belfast | Skimming & Rendering</title>
+        <meta name="description" content="Looking for a professional plasterer in Belfast? Surgenor Plastering offers expert skimming, rendering, and plasterboarding services. High-quality finish guaranteed." />
+        <link rel="canonical" href="https://surgenor-plastering.co.uk/" />
+      </Helmet>
+
       {/* Hero Section */}
       <section className="relative h-[70vh] w-full bg-black flex items-center justify-center overflow-hidden">
         <img 

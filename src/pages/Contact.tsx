@@ -1,5 +1,6 @@
 import { Phone, MessageSquare, Mail, Facebook, Instagram, Search, CheckCircle2 } from 'lucide-react';
 import { motion } from 'motion/react';
+import { Helmet } from 'react-helmet-async';
 
 export default function Contact() {
   const contactMethods = [
@@ -49,6 +50,11 @@ export default function Contact() {
 
   return (
     <div className="animate-in fade-in duration-700">
+      <Helmet>
+        <title>Contact Surgenor Plastering | Free Quotes Belfast</title>
+        <meta name="description" content="Get a free quote for your plastering project in Belfast. Contact Surgenor Plastering for expert skimming, rendering, and wall removals. Call, WhatsApp, or email us today." />
+        <link rel="canonical" href="https://surgenor-plastering.co.uk/contact" />
+      </Helmet>
       <div className="bg-gray-50 py-16 px-4 text-center border-b border-gray-200">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-gray-900">Contact Us</h1>
         <p className="text-gray-500 max-w-2xl mx-auto text-lg">

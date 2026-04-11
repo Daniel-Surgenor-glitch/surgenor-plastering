@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { Helmet } from 'react-helmet-async';
 
 const galleryItems = [
   { src: 'rendering_new.jpg', label: 'External Rendering' },
@@ -19,6 +20,11 @@ export default function Gallery() {
 
   return (
     <div className="animate-in fade-in duration-700">
+      <Helmet>
+        <title>Plastering Gallery Belfast | Our Recent Work | Surgenor Plastering</title>
+        <meta name="description" content="View our gallery of professional plastering projects in Belfast. See examples of our expert skimming, rendering, and warm wall systems." />
+        <link rel="canonical" href="https://surgenor-plastering.co.uk/gallery" />
+      </Helmet>
       <div className="bg-gray-50 py-16 px-4 text-center border-b border-gray-200">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-gray-900">Our Portfolio</h1>
         <p className="text-gray-500 max-w-2xl mx-auto text-lg">

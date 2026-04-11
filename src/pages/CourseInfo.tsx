@@ -1,10 +1,17 @@
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { CheckCircle2, Video, Home as HomeIcon, Users, Target, ArrowRight } from 'lucide-react';
 
 export default function CourseInfo() {
   return (
     <div className="animate-in fade-in duration-700">
+      <Helmet>
+        <title>Plastering Course Belfast | Learn Plastering & Skimming | Surgenor Plastering</title>
+        <meta name="description" content="Master the art of plastering with our 3-day hands-on course in Belfast. Learn skimming, rendering, and plasterboarding from experts. Perfect for beginners and DIYers." />
+        <link rel="canonical" href="https://surgenor-plastering.co.uk/plastering-course" />
+      </Helmet>
+
       {/* Hero Section */}
       <section className="bg-[#1a1c1e] text-white py-20 px-4 text-center">
         <div className="max-w-4xl mx-auto">
