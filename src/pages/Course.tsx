@@ -136,7 +136,7 @@ export default function Course() {
               <h4 className="text-xl font-bold text-gray-900 mb-2">Health & Safety Module</h4>
               <p className="text-gray-500 text-sm mb-6 flex-grow">Essential safety guidelines and procedures for the training site.</p>
               <a 
-                href="/site-pdf/health-safety.pdf" 
+                href="site-pdf/health-safety.pdf" 
                 download="health-safety.pdf"
                 className="w-full bg-blue-600 text-white py-3 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-blue-700 transition-all shadow-md"
               >
@@ -150,7 +150,7 @@ export default function Course() {
               <h4 className="text-xl font-bold text-gray-900 mb-2">Beginner Plastering Starter Kit</h4>
               <p className="text-gray-500 text-sm mb-6 flex-grow">Everything you need to know to get started with your first project.</p>
               <a 
-                href="/site-pdf/starter-kit.pdf" 
+                href="site-pdf/starter-kit.pdf" 
                 download="starter-kit.pdf"
                 className="w-full bg-blue-600 text-white py-3 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-blue-700 transition-all shadow-md"
               >
@@ -164,7 +164,7 @@ export default function Course() {
               <h4 className="text-xl font-bold text-gray-900 mb-2">Prep Checklist</h4>
               <p className="text-gray-500 text-sm mb-6 flex-grow">A step-by-step guide to preparing your workspace for a perfect finish.</p>
               <a 
-                href="/site-pdf/prep-checklist.pdf" 
+                href="site-pdf/prep-checklist.pdf" 
                 download="prep-checklist.pdf"
                 className="w-full bg-blue-600 text-white py-3 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-blue-700 transition-all shadow-md"
               >
@@ -178,7 +178,7 @@ export default function Course() {
               <h4 className="text-xl font-bold text-gray-900 mb-2">Mixing Cheat Sheet</h4>
               <p className="text-gray-500 text-sm mb-6 flex-grow">Quick reference for perfect plaster consistency every time.</p>
               <a 
-                href="/site-pdf/mixing-cheat-sheet.pdf" 
+                href="site-pdf/mixing-cheat-sheet.pdf" 
                 download="mixing-cheat-sheet.pdf"
                 className="w-full bg-blue-600 text-white py-3 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-blue-700 transition-all shadow-md"
               >

@@ -39,7 +39,7 @@ export default function Gallery() {
               onClick={() => setSelectedImage(item.src)}
             >
               <img 
-                src={`/site-image/${item.src}`} 
+                src={`site-image/${item.src}`} 
                 alt={item.label}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 group-hover:brightness-75"
                 referrerPolicy="no-referrer"
@@ -72,7 +72,7 @@ export default function Gallery() {
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              src={`/site-image/${selectedImage}`} 
+              src={`site-image/${selectedImage}`} 
               className="max-w-full max-h-full rounded-lg border-4 border-white shadow-2xl"
               alt="Full view"
               onClick={(e) => e.stopPropagation()}

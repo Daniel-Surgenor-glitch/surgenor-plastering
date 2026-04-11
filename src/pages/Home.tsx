@@ -41,7 +41,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[70vh] w-full bg-black flex items-center justify-center overflow-hidden">
         <img 
-          src="/site-image/hero.jpg" 
+          src="site-image/hero.jpg" 
           className="absolute inset-0 w-full h-full object-cover object-bottom opacity-70"
           alt="Belfast Plastering Experts"
           referrerPolicy="no-referrer"
@@ -87,7 +87,7 @@ export default function Home() {
             className="group relative h-[400px] rounded-3xl overflow-hidden shadow-lg cursor-pointer bg-blue-600"
           >
             <img 
-              src="/site-image/card-1.jpg" 
+              src="site-image/card-1.jpg" 
               alt="External Rendering" 
               className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500"
               referrerPolicy="no-referrer"
@@ -109,7 +109,7 @@ export default function Home() {
             className="group relative h-[400px] rounded-3xl overflow-hidden shadow-lg cursor-pointer bg-blue-600"
           >
             <img 
-              src="/site-image/card-2.jpg" 
+              src="site-image/card-2.jpg" 
               alt="Internal Plastering" 
               className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500"
               referrerPolicy="no-referrer"
@@ -131,7 +131,7 @@ export default function Home() {
             className="group relative h-[400px] rounded-3xl overflow-hidden shadow-lg cursor-pointer bg-blue-600"
           >
             <img 
-              src="/site-image/card-3.jpg" 
+              src="site-image/card-3.jpg" 
               alt="Plastering Course" 
               className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500"
               referrerPolicy="no-referrer"
