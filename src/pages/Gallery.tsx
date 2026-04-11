@@ -7,11 +7,11 @@ const galleryItems = [
   { src: 'skimming_pro.jpg', label: 'Internal Skimming' },
   { src: 'warm_wall.jpg', label: 'Warm Wall System' },
   { src: 'render_wall1.jpg', label: 'External Render Wall' },
-  { src: 'Loft_replaster_1.jpg', label: 'Loft Re-plastering' },
-  { src: 'Damp_repair_1.jpg', label: 'Damp Repair & Finish' },
-  { src: 'Fireplace_Repair_1.jpg', label: 'Fireplace Restoration' },
-  { src: 'Shed_plaster_1.jpg', label: 'Outbuilding Plastering' },
-  { src: 'Room_replaster_1.jpg', label: 'Full Room Re-plaster' },
+  { src: 'loft_replaster_1.jpg', label: 'Loft Re-plastering' },
+  { src: 'damp_repair_1.jpg', label: 'Damp Repair & Finish' },
+  { src: 'fireplace_repair_1.jpg', label: 'Fireplace Restoration' },
+  { src: 'shed_plaster_1.jpg', label: 'Outbuilding Plastering' },
+  { src: 'loft_replaster_1.jpg', label: 'Full Room Re-plaster' },
 ];
 
 export default function Gallery() {

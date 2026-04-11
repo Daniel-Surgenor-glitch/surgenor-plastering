@@ -131,7 +131,7 @@ export default function Home() {
             className="group relative h-[400px] rounded-3xl overflow-hidden shadow-lg cursor-pointer bg-blue-600"
           >
             <img 
-              src="site-image/card-3.jpg" 
+              src="site-image/card3.png" 
               alt="Plastering Course" 
               className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500"
               referrerPolicy="no-referrer"
